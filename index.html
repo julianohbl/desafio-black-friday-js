@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Black Friday</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logotipo Black Friday" />
+      </div>
+      <div class="info">
+        <h1>Está chegando!!</h1>
+        <p>
+          Cadastre-se e receba antes de todo mundo as promoções incríveis de
+          Black Friday que estamos preparando!
+        </p>
+        <a href="#form">Cadastre-se</a>
+      </div>
+    </section>
+
+    <section class="countdown-container">
+      <div class="countdown-wrapper">
+        <div class="countdown"></div>
+      </div>
+    </section>
+
+    <section class="container">
+      <form action="submit" id="form" class="form">
+        <h1>Faça seu cadastro</h1>
+        <label for="">Nome</label>
+        <input type="text" id="name">
+        <label for="">E-mail</label>
+        <input type="email" id="email">
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: url("../assets/background.png") no-repeat center;
+  background-size: cover;
+}
+
+.logo {
+  max-width: 500px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.info {
+  width: 600px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.info h1 {
+  font-size: 48px;
+  color: #ffc200;
+}
+
+.info p {
+  margin-top: 32px;
+  font-size: 32px;
+  color: #fff;
+}
+
+button {
+  background: #ffc200;
+  height: 56px;
+  border-radius: 10px;
+  border: 0;
+  padding: 0 16px;
+  color: #17191b;
+  width: 80%;
+  font-weight: 500;
+  font-size: 28px;
+  margin-top: 32px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background: #c49601;
+}
+
+.countdown-container {
+  width: 100%;
+  height: 400px;
+  background-color: #ffc200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid red;
+}
+
+.countdown-wrapper {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.countdown-wrapper h1 {
+  font-size: 8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown div {
+  width: 13rem;
+  height: 13rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(31, 29, 29, 0.9) 50%,
+    rgba(56, 53, 53, 0.9) 0
+  );
+  margin: 0 4rem 4rem 4rem;
+  font-size: 7rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.countdown div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.24rem;
+  background-color: #17181b;
+}
+
+.countdown div::after {
+  content: attr(data-content);
+  font-size: 2.2rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: -6rem;
+  color: #000;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 600px;
+  padding: 32px;
+  border: 20px solid #ffc400;
+  background: rgba(31, 29, 29, 0.9);
+}
+
+.form h1 {
+  margin: 32px;
+  font-size: 28px;
+  text-align: center;
+  color: #ffc200;
+}
+
+.form label {
+  font-size: 22px;
+  margin-top: 4px;
+  color: #fff;
+}
+
+.form input {
+  height: 56px;
+  margin: 8px 0;
+  font-size: 22px;
+}
+
+.form button {
+  margin: 18px auto;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    height: 800px;
+    width: 100vw;
+    border: 3px solid red;
+  }
+
+  .container form {
+    height: 600px;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .form {
+    padding: 8px;
+    width: 90%;
+    height: 500px;
+  }
+}
