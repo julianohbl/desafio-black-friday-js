@@ -40,8 +40,22 @@ html {
 
 .info p {
   margin-top: 32px;
+  margin-bottom: 32px;
   font-size: 32px;
   color: #fff;
+}
+
+.info a {
+  background: #ffc200;
+  height: 56px;
+  border-radius: 10px;
+  border: 0;
+  padding: 0 16px;
+  color: #17191b;
+  width: 80%;
+  font-weight: 500;
+  font-size: 28px;
+  text-decoration: none;
 }
 
 button {
@@ -69,7 +83,6 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid red;
 }
 
 .countdown-wrapper {
@@ -163,7 +176,6 @@ button:hover {
     flex-direction: column;
     height: 800px;
     width: 100vw;
-    border: 3px solid red;
   }
 
   .container form {
